@@ -41,6 +41,7 @@ jobs:
         curl -o sonar-scanner-cli.zip -L https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.7.1.11002-linux.zip
         unzip sonar-scanner-cli.zip
         export PATH=$PATH:$PWD/sonar-scanner-4.7.1.11002-linux/bin
+        rm sonar-scanner-cli.zip
    
     - name: SonarCloud Scan
       run: |
