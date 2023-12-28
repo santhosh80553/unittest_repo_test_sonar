@@ -45,7 +45,7 @@ jobs:
 
     - name: SonarCloud Scan
       run: |
-        sonar-scanner \
+        ./sonar-scanner-${{ steps.get-sonar-version.outputs.version }}-linux/bin/sonar-scanner \
           -Dsonar.projectKey=santhosh80553_unittest_repo_test_sonar\
           -Dsonar.organization=santhosh80553\
           -Dsonar.sources=. \
