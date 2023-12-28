@@ -48,7 +48,7 @@ jobs:
         export PATH=$PATH:$PWD/sonar-scanner-${{ steps.get-sonar-version.outputs.version }}-linux/bin
         rm sonar-scanner-cli.zip
 
-    - name: SonarCloud Scan
+    - name: SonarCloud Scan  
       run: |
         ./sonar-scanner-${{ steps.get-sonar-version.outputs.version }}-linux/bin/sonar-scanner \
           -Dsonar.projectKey=santhosh80553_unittest_repo_test_sonar\
