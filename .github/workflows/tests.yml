@@ -45,7 +45,6 @@ jobs:
 
     - name: SonarCloud Scan
       run: |
-        python -m pip install sonar-scanner
         sonar-scanner \
           -Dsonar.projectKey=santhosh80553_unittest_repo_test_sonar\
           -Dsonar.organization=santhosh80553\
